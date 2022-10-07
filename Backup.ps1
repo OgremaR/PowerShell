@@ -1,0 +1,5 @@
+﻿$date = Get-Date -Format "yyyy-MM-dd"
+$Path = Read-Host -Prompt "Please enter path for backup"
+$PathBackup = Read-Host -Prompt "Where would you like to save the backup?"
+Compress-Archive -Path $Path -CompressionLevel 'Fastest' -DestinationPath "$PathBackup Backup-$date"
+Write-Host "Created backup at $($PathBackup + 'backup' + $date).zip"

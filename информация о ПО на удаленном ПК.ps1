@@ -1,0 +1,1 @@
+﻿Invoke-Command -ComputerName rst-pc-0962 -Credential rst\_sidorov -ScriptBlock {Get-Package} > ./program_on_pc.txt

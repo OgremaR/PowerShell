@@ -1,5 +1,5 @@
-﻿$pathdfs = "\\rst.atlantis-pak.ru\DFS\Atlantis-Pak\Export Clients\"
-$pathtarget = "\\rst-fsa\groups$\shares\Atlantis-Pak\Export Clients\"
+﻿$pathdfs = "\\xxx.ru\DFS\xxx\"
+$pathtarget = "\\xxx\groups$\shares\xxx"
 $parts = Get-Content .\folders.txt
 foreach ($part in $parts) {
     $pathd = $pathdfs+$part

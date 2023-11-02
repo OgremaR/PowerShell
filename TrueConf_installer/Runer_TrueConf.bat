@@ -1,0 +1,1 @@
+"C:\TrueConf\trueconf_client_x64.exe" /VERYSILENT /FORCE

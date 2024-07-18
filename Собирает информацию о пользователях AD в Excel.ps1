@@ -1,0 +1,2 @@
+﻿#Get-ADUser -SearchBase "OU=Workers,DC=r1,DC=pak,DC=ru" -Filter * -Properties * | select EmailAddress, DisplayName, Description, Enabled | Out-File -Append C:\Users\user\Desktop\scripts\post_users.txt
+Get-ADUser -SearchBase "OU=Workers,DC=r1,DC=pak,DC=ru" -Filter {Enabled -eq $false} -Properties * | select EmailAddress, DisplayName, Description, Enabled, modifyTimeStamp | Out-File -Append C:\Users\user\Desktop\scripts\post_users.txt
